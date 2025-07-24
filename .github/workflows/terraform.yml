@@ -1,6 +1,7 @@
 name: Terraform Applier
 
 on: 
+  branches: [main]
   workflow_dispatch:
 
 jobs:
