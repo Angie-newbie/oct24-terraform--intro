@@ -5,9 +5,12 @@ on:
 
 jobs:
   terraform_studd:
-    runs-on: ubuntu- latest
+    runs-on: ubuntu-latest
 
   steps:
+    - name: Get repo
+      uses: actions/checkout@v4
+
     - name: Configure AWS Credentials
       uses: aws-actions/configure-aws-credentials@v4.1.0
       with:
